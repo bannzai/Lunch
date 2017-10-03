@@ -21,7 +21,8 @@ class DinnerViewController: UIViewController {
     }()
     
     override func loadView() {
-        super.loadView()
+        view = UIView(frame: .zero)
+        view.backgroundColor = .white
         
         self.view.addSubview(self.dinnerLabel)
         self.layoutDinnerLabel()

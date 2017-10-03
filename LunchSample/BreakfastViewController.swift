@@ -35,7 +35,8 @@ class BreakfastViewController: UIViewController {
     }()
     
     override func loadView() {
-        super.loadView()
+        view = UIView(frame: .zero)
+        view.backgroundColor = .white
         
         self.menuLabel.text = self.menuModel.menu
         self.view.addSubview(self.menuLabel)

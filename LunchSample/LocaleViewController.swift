@@ -41,7 +41,8 @@ class LocaleViewController: UIViewController {
     }()
     
     override func loadView() {
-        super.loadView()
+        view = UIView(frame: .zero)
+        view.backgroundColor = .white
         
         view.addSubview(languageLabel)
         view.addSubview(regionLabel)
